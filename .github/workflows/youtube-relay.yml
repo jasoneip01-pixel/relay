@@ -1,0 +1,33 @@
+name: YouTube Relay
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'YouTube URL'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: pip install requests
+      - name: Fetch YouTube metadata
+        run: python3 .github/workflows/youtube_relay.py --url "${{ inputs.url }}"
+      - name: Commit results
+        run: |
+          git config user.name "youtube-relay[bot]"
+          git config user.email "bot@relay.local"
+          git add data/youtube/
+          git diff --staged --quiet || (git commit -m "youtube: ${{ inputs.url }}" && git push)

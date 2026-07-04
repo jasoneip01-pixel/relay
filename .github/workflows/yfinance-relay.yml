@@ -1,0 +1,44 @@
+name: Yahoo Finance Relay
+
+on:
+  workflow_dispatch:
+    inputs:
+      symbols:
+        description: 'Comma-separated stock symbols (e.g. AAPL,TSLA,SPY)'
+        required: false
+        type: string
+      quick:
+        description: 'Quick mode — print to stdout only, no commit'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  yfinance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install yfinance
+        run: pip install yfinance
+      - name: Fetch quotes
+        run: |
+          if [ -n "${{ inputs.symbols }}" ]; then
+            python3 .github/workflows/yfinance_relay.py "${{ inputs.symbols }}"
+          else
+            python3 .github/workflows/yfinance_relay.py
+          fi
+      - name: Commit results
+        if: ${{ !inputs.quick }}
+        run: |
+          git config user.name "yfinance-relay[bot]"
+          git config user.email "bot@relay.local"
+          git add data/yfinance/
+          git diff --staged --quiet || (git commit -m "yfinance: $(date -u +%Y-%m-%d)" && git push)

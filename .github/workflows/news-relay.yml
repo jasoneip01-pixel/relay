@@ -26,5 +26,5 @@ jobs:
         run: |
           git config user.name "news-relay[bot]"
           git config user.email "bot@relay.local"
-          git add data/news/
+          git add news/
           git diff --staged --quiet || (git commit -m "news: $(date -u +%Y-%m-%dT%H:%M)" && git push)

@@ -1,81 +1,99 @@
 #!/usr/bin/env python3
-"""News Relay Collector — run inside GitHub Actions (US servers)
-Collects from sources blocked/bypassed by GFW and writes structured JSON."""
+"""News Relay — produces bilingual daily briefing as readable Markdown.
+Format mirrors skyflyld/german-daily-news: YYYY/MM/YYYY-MM-DD.md"""
 
 import json, os, re, html
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+
 try:
     import requests
 except ImportError:
     import subprocess, sys
     subprocess.run([sys.executable, '-m', 'pip', 'install', 'requests', 'lxml'], check=True)
     import requests
+    from lxml import html as lxml_html
 
-OUT = f"data/news/{datetime.now(timezone.utc).strftime('%Y-%m-%d')}"
-os.makedirs(OUT, exist_ok=True)
 UA = 'Mozilla/5.0 (X11; Linux x86_64) NewsRelay/1.0'
+TODAY = datetime.now(timezone.utc)
+DATE_STR = TODAY.strftime('%Y-%m-%d')
+YEAR = TODAY.strftime('%Y')
+MONTH = TODAY.strftime('%m')
 
-def save(name, data):
-    path = f"{OUT}/{name}.json"
-    with open(path, 'w') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"  wrote {path} ({len(data.get('items',[]))} items)")
+OUT_DIR = f"news/{YEAR}/{MONTH}"
+os.makedirs(OUT_DIR, exist_ok=True)
+OUT_PATH = f"{OUT_DIR}/{DATE_STR}.md"
 
-# ── 1. WSJ US Business RSS ──
-print("[1/5] WSJ RSS...")
+# ── Collect news sections ──
+sections = []
+
+# ── 1. WSJ Business ──
+print("[1/5] WSJ Business...")
+wsj_items = []
 try:
     r = requests.get('https://feeds.content.dowjones.io/public/rss/WSJcomUSBusiness',
                      headers={'User-Agent': UA}, timeout=20)
-    items = []
     for m in re.finditer(r'<item>.*?</item>', r.text, re.DOTALL):
         item = m.group()
         def ex(tag):
             mm = re.search(f'<{tag}[^>]*>(.*?)</{tag}>', item, re.DOTALL)
             return html.unescape(mm.group(1).strip()) if mm else ''
-        items.append({
-            'title': ex('title'),
-            'desc': re.sub(r'<[^>]+>', '', ex('description'))[:500],
-            'link': ex('link'),
-            'pubDate': ex('pubDate'),
-            'creator': ex('dc:creator'),
-        })
-    save('wsj', {'source': 'WSJ.com US Business RSS', 'ts': r.headers.get('Date',''), 'items': items})
+        title = ex('title')
+        desc = re.sub(r'<[^>]+>', '', ex('description'))[:300]
+        link = ex('link')
+        creator = ex('dc:creator')
+        if title:
+            wsj_items.append((title, desc, link, creator))
+    sections.append(('💰 财经 / Business (WSJ)', wsj_items[:8]))
 except Exception as e:
-    save('wsj', {'source': 'WSJ RSS', 'error': str(e), 'items': []})
+    sections.append(('💰 财经 / Business (WSJ)', [f'⚠️ 获取失败: {e}']))
 
 # ── 2. AP News ──
 print("[2/5] AP News...")
+ap_items = []
 try:
+    import lxml.html
     r = requests.get('https://apnews.com', headers={'User-Agent': UA}, timeout=20)
-    text = re.sub(r'<script[^>]*>.*?</script>', '', r.text, flags=re.DOTALL)
-    text = re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL)
-    text = re.sub(r'<[^>]+>', ' ', text)
-    text = re.sub(r'\s+', ' ', text).strip()
-    # Extract likely headlines (capitalized phrases)
-    lines = [l.strip() for l in text.split('.') if len(l.strip()) > 40]
-    save('apnews', {'source': 'AP News', 'ts': r.headers.get('Date',''), 'snippets': lines[:30]})
+    tree = lxml.html.fromstring(r.text)
+    # Extract headlines from likely containers
+    for el in tree.xpath('//a[contains(@href, "/article/")]'):
+        txt = el.text_content().strip()
+        href = el.get('href', '')
+        if len(txt) > 30 and not href.startswith('http'):
+            href = 'https://apnews.com' + href
+        if len(txt) > 30 and txt not in [x[0] for x in ap_items]:
+            ap_items.append((txt[:200], href))
+    sections.append(('🌍 国际新闻 / AP News', ap_items[:10]))
 except Exception as e:
-    save('apnews', {'source': 'AP News', 'error': str(e), 'snippets': []})
+    sections.append(('🌍 国际新闻 / AP News', [f'⚠️ 获取失败: {e}']))
 
 # ── 3. Federal Reserve ──
 print("[3/5] Federal Reserve...")
+fed_items = []
 try:
     r = requests.get('https://www.federalreserve.gov/newsevents/pressreleases.htm',
                      headers={'User-Agent': UA}, timeout=20)
-    releases = re.findall(r'<a\s+href="([^"]+press[^"]*)">\s*([^<]+)', r.text)
-    items = [{'title': t.strip(), 'link': 'https://www.federalreserve.gov' + u if u.startswith('/') else u}
-             for u, t in releases[:20]]
-    save('fed', {'source': 'Federal Reserve', 'ts': r.headers.get('Date',''), 'items': items})
+    for m in re.finditer(r'<a\s+href="([^"]*press[^"]*)">\s*([^<]+)', r.text):
+        u, t = m.group(1), m.group(2).strip()
+        if not u.startswith('http'):
+            u = 'https://www.federalreserve.gov' + u
+        fed_items.append((t, u))
+    sections.append(('🏛️ 美联储 / Federal Reserve', fed_items[:8]))
 except Exception as e:
-    save('fed', {'source': 'Fed', 'error': str(e), 'items': []})
+    sections.append(('🏛️ 美联储 / Federal Reserve', [f'⚠️ 获取失败: {e}']))
 
-# ── 4. FRED economic data ──
+# ── 4. FRED Macro ──
 print("[4/5] FRED data...")
 fred_series = [
-    ('GDP', 'GDP'), ('UNRATE', 'Unemployment'), ('CPIAUCSL', 'CPI'),
-    ('FEDFUNDS', 'Fed Funds Rate'), ('SP500', 'S&P 500'),
+    ('GDP', 'GDP (Gross Domestic Product)'),
+    ('UNRATE', 'Unemployment Rate'),
+    ('CPIAUCSL', 'CPI (Consumer Price Index)'),
+    ('FEDFUNDS', 'Fed Funds Rate'),
+    ('SP500', 'S&P 500 (Index)'),
+    ('DGS10', '10-Year Treasury'),
+    ('T5YIE', '5-Year Breakeven Inflation'),
+    ('M2SL', 'M2 Money Supply'),
 ]
-series_data = []
+macro_lines = []
 for sid, name in fred_series:
     try:
         r = requests.get(f'https://fred.stlouisfed.org/graph/fredgraph.csv?series_id={sid}',
@@ -83,15 +101,18 @@ for sid, name in fred_series:
         lines = r.text.strip().split('\n')
         if len(lines) >= 2:
             last = lines[-1].split(',')
-            series_data.append({'id': sid, 'name': name, 'latest_value': last[-1] if len(last) > 1 else 'N/A', 'date': last[0]})
+            val = last[-1] if len(last) > 1 else 'N/A'
+            dt = last[0] if len(last) > 1 else ''
+            macro_lines.append(f'- **{name}** ({sid}): {val} (as of {dt})')
     except:
-        series_data.append({'id': sid, 'name': name, 'error': 'failed'})
-save('fred', {'source': 'FRED', 'series': series_data})
+        macro_lines.append(f'- **{name}** ({sid}): ⚠️ unavailable')
 
-# ── 5. Alpha Vantage market snapshot ──
-print("[5/5] Alpha Vantage (demo)...")
-tickers = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'SPY', 'QQQ']
-quotes = []
+sections.append(('📊 宏观指标 / FRED Economic Data', macro_lines))
+
+# ── 5. Market Snapshot ──
+print("[5/5] Market snapshot...")
+tickers = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'META', 'NVDA', 'SPY', 'QQQ', 'DIA']
+quote_lines = []
 for t in tickers:
     try:
         r = requests.get(
@@ -100,14 +121,69 @@ for t in tickers:
         )
         d = r.json()
         gq = d.get('Global Quote', {})
-        quotes.append({
-            'symbol': t,
-            'price': gq.get('05. price', 'N/A'),
-            'change_pct': gq.get('10. change percent', 'N/A'),
-            'volume': gq.get('06. volume', 'N/A'),
-        })
+        price = gq.get('05. price', 'N/A')
+        change = gq.get('10. change percent', 'N/A')
+        vol = gq.get('06. volume', 'N/A')
+        if change != 'N/A':
+            emoji = '🟢' if float(change.replace('%','')) >= 0 else '🔴'
+        else:
+            emoji = '⚪'
+        quote_lines.append(f'- {emoji} **{t}**: ${price} ({change}) — Vol: {vol}')
     except:
-        quotes.append({'symbol': t, 'error': 'failed'})
-save('market', {'source': 'Alpha Vantage', 'ts': datetime.now(timezone.utc).isoformat(), 'quotes': quotes})
+        quote_lines.append(f'- ⚠️ **{t}**: failed')
 
-print(f"\nDone. All saved to {OUT}/")
+sections.append(('📈 市场快照 / Market Snapshot', quote_lines))
+
+# ── Build markdown ──
+md = f"""# 📡 每日新闻简报 / Daily News Briefing
+**{DATE_STR} ({TODAY.strftime('%A')})** — 来源: WSJ · AP News · Federal Reserve · FRED · Alpha Vantage
+
+---
+
+"""
+
+for section_title, items in sections:
+    md += f"## {section_title}\n\n"
+    for item in items:
+        if isinstance(item, tuple):
+            title, desc, link, creator = item if len(item) == 4 else (*item, '', '')
+            md += f"**{title}**"
+            if creator:
+                md += f" — *{creator}*"
+            md += f"\n> {desc[:200]}"
+            if link:
+                md += f"\n🔗 {link}"
+            md += "\n\n"
+        elif isinstance(item, str):
+            md += f"{item}\n\n"
+        elif isinstance(item, tuple) and len(item) == 2:
+            # (title, link) from AP/Fed
+            md += f"- **{item[0]}**\n  🔗 {item[1]}\n\n"
+
+md += f"""---
+
+*自动采集于 {TODAY.strftime('%Y-%m-%d %H:%M UTC')} · 数据仅供个人参考*
+
+*Powered by [jasoneip01-pixel/relay](https://github.com/jasoneip01-pixel/relay)*
+"""
+
+with open(OUT_PATH, 'w') as f:
+    f.write(md)
+print(f"✅ Wrote {OUT_PATH} ({len(md)} chars)")
+
+# ── Update news/README.md index ──
+idx_path = 'news/README.md'
+if os.path.exists(idx_path):
+    with open(idx_path) as f:
+        idx = f.read()
+    # Check if already listed
+    if DATE_STR not in idx:
+        link_line = f"| {DATE_STR} | [{DATE_STR}.md]({YEAR}/{MONTH}/{DATE_STR}.md) |\n"
+        # Insert before the closing blank line
+        lines = idx.split('\n')
+        insert_at = len(lines) - 2  # before last empty line + auto-note
+        lines.insert(insert_at, link_line.rstrip())
+        idx = '\n'.join(lines)
+        with open(idx_path, 'w') as f:
+            f.write(idx)
+        print(f"✅ Updated {idx_path}")

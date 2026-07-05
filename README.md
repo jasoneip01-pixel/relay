@@ -47,3 +47,15 @@ cd relay-repo && git pull && cat data/<YYYY-MM-DD>/<slug>.json
 | Alpha Vantage (market) | scheduled | 🟡 T2 |
 
 For direct-access sources (no relay needed), see `skills/arist-self/foreign-channel/references/channel-registry.md`
+
+## 📡 每日新闻简报
+
+格式：`news/YYYY/MM/YYYY-MM-DD.md` — 可读的 Markdown 文件
+
+| 内容 | 位置 |
+|------|------|
+| 财经（WSJ） | ✅ 每日双语言简报 |
+| 国际新闻（AP） | ✅ 每日双语言简报 |
+| 美联储公告 | ✅ 最新公告链接 |
+| 宏观指标（FRED） | ✅ GDP/CPI/利率/失业等 |
+| 市场快照 | ✅ 主要标的收盘价 |

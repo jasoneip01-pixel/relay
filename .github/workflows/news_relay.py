@@ -176,14 +176,15 @@ idx_path = 'news/README.md'
 if os.path.exists(idx_path):
     with open(idx_path) as f:
         idx = f.read()
-    # Check if already listed
     if DATE_STR not in idx:
+        # Insert new link row right after the table header (find "|---|")
         link_line = f"| {DATE_STR} | [{DATE_STR}.md]({YEAR}/{MONTH}/{DATE_STR}.md) |\n"
-        # Insert before the closing blank line
-        lines = idx.split('\n')
-        insert_at = len(lines) - 2  # before last empty line + auto-note
-        lines.insert(insert_at, link_line.rstrip())
-        idx = '\n'.join(lines)
+        marker = '|---|\n'
+        if marker in idx:
+            pos = idx.index(marker) + len(marker)
+            idx = idx[:pos] + link_line + idx[pos:]
+        else:
+            idx += link_line
         with open(idx_path, 'w') as f:
             f.write(idx)
         print(f"✅ Updated {idx_path}")

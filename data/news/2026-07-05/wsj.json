@@ -1,0 +1,601 @@
+{
+  "source": "WSJ.com US Business RSS",
+  "ts": "Sun, 05 Jul 2026 03:45:04 GMT",
+  "items": [
+    {
+      "title": "EV Batteries Are Defying Expectations After Hundreds of Thousands of Miles",
+      "desc": "Industry experts think newfound knowledge of battery durability is a game-changer for consumer confidence in EVs.",
+      "link": "https://www.wsj.com/business/autos/ev-batteries-are-defying-expectations-after-hundreds-of-thousands-of-miles-8579de13?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sun, 05 Jul 2026 02:00:00 GMT",
+      "creator": "Ellie Davis"
+    },
+    {
+      "title": "News Quiz for July 4, 2026",
+      "desc": "",
+      "link": "https://www.wsj.com/business/media/news-quiz-for-july-4-2026-a73200a2?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sat, 04 Jul 2026 10:00:00 GMT",
+      "creator": "Daniel Akst"
+    },
+    {
+      "title": "The Quest to Make Humanoid Robots Safe Enough for Humans",
+      "desc": "Viral mishaps underscore a big challenge for robot makers: How can they ensure a humanoid doesn’t hurt a human?",
+      "link": "https://www.wsj.com/tech/the-quest-to-make-humanoid-robots-safe-enough-for-humans-4887c123?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sat, 04 Jul 2026 09:30:00 GMT",
+      "creator": "John Keilman"
+    },
+    {
+      "title": "The Company Founder Who Got Fired for Ignoring His Own Return-to-Office Rules",
+      "desc": "The former executive alleges his fellow co-owners used the policy as an excuse to push him out of the asset-management firm he helped run.",
+      "link": "https://www.wsj.com/business/the-founder-who-got-fired-for-ignoring-his-own-return-to-office-rules-6b194dd7?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sat, 04 Jul 2026 09:30:00 GMT",
+      "creator": "Lindsay Ellis"
+    },
+    {
+      "title": "This Simple White Line Is America’s Greatest Unsung Innovation",
+      "desc": "You know about the lightbulb and the iPhone. This is the unknown story of another ingenious creation that changed a nation.",
+      "link": "https://www.wsj.com/business/white-line-road-invention-america-250-8ce6bb89?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sat, 04 Jul 2026 01:00:00 GMT",
+      "creator": "Ben Cohen"
+    },
+    {
+      "title": "France’s Thales to Take Hit After Germany Scraps Frigate Program",
+      "desc": "The aerospace-and-defense group said it would record a charge in the first half after Berlin scrapped a project to procure F126 frigates.",
+      "link": "https://www.wsj.com/business/earnings/frances-thales-to-take-hit-after-germany-scraps-frigate-program-51bcb164?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 16:42:00 GMT",
+      "creator": "Mauro Orru"
+    },
+    {
+      "title": "Ipsen to Buy Swiss Biotech Memo in Deal That Could Top $800 Million",
+      "desc": "The move marks Ipsen’s second acquisition this week after its agreement to take over Kartos Therapeutics, a company developing a drug to treat a rare blood cancer.",
+      "link": "https://www.wsj.com/health/pharma/ipsen-to-buy-swiss-biotech-memo-in-deal-that-could-top-800-million-30979c46?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 05:55:00 GMT",
+      "creator": "Adrià Calatayud"
+    },
+    {
+      "title": "Alcoa Buys South32 Aluminum Assets in Up to $5.6 Billion Deal",
+      "desc": "Alcoa has agreed to buy South32’s bauxite, alumina and aluminum assets across Australia, Brazil and South Africa in a cash-and-stock deal.",
+      "link": "https://www.wsj.com/business/deals/alcoa-to-acquire-mining-processing-assets-from-south32-for-4-1-billion-ffd85a31?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 05:19:00 GMT",
+      "creator": "Elias Schisgall"
+    },
+    {
+      "title": "Getty Images Plans to End Shutterstock Deal After U.K. Imposes Conditions",
+      "desc": "Getty Images plans to terminate its merger agreement with Shutterstock after a U.K. regulator said the latter company must sell its editorial business in order for the merger to be approved.",
+      "link": "https://www.wsj.com/business/getty-images-plans-to-end-shutterstock-deal-after-u-k-imposes-conditions-6e831dc4?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 22:35:00 GMT",
+      "creator": "Elias Schisgall"
+    },
+    {
+      "title": "KKR to Acquire EDF Power Solutions’ North American Operations for $4.2 Billion",
+      "desc": "EDF power solutions’ North American renewable energy business ranks among the top 10 U.S. renewable capacity owners and operates solar, wind and battery storage assets across the U.S. and Canada.",
+      "link": "https://www.wsj.com/business/deals/kkr-to-acquire-edf-power-solutions-north-american-operations-for-4-2-billion-037fa4b8?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 21:38:00 GMT",
+      "creator": "Anvee Bhutani"
+    },
+    {
+      "title": "CVC Capital Partners to Buy Ingredients Business Irca From Advent",
+      "desc": "Irca creates more than 7,000 products and serves customers in more than 100 countries and CVC said it would support the next phase of the company’s growth.",
+      "link": "https://www.wsj.com/business/deals/cvc-capital-partners-to-buy-ingredients-business-irca-from-advent-d60bf54f?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 06:20:00 GMT",
+      "creator": "Adam Whittaker"
+    },
+    {
+      "title": "Pluxee Shares Rise on Smaller-Than-Expected Revenue Drop",
+      "desc": "Pluxee shares rose after third-quarter revenue fell 3.3% on an organic basis, beating expectations of a 4.3% organic drop.",
+      "link": "https://www.wsj.com/business/retail/pluxee-shares-rise-on-smaller-than-expected-revenue-drop-cb5a4197?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 08:04:00 GMT",
+      "creator": "Aimee Look"
+    },
+    {
+      "title": "Pershing Square Initiates Quarterly Dividend",
+      "desc": "The quarterly cash dividend of 12.2 cents a share is payable July 21 to shareholders of record July 13.",
+      "link": "https://www.wsj.com/business/pershing-square-initiates-quarterly-dividend-243629f8?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 21:00:00 GMT",
+      "creator": "Doc Louallen"
+    },
+    {
+      "title": "Noel Hord, Who Went From Shoe Salesman to President of Nine West, Dies at Age 79",
+      "desc": "Starting as a stock assistant, he rose to president of Nine West Group.",
+      "link": "https://www.wsj.com/business/retail/noel-hord-nine-west-347a9dea?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 18:51:00 GMT",
+      "creator": "James R. Hagerty"
+    },
+    {
+      "title": "Consumers Shun Mid-Sized Packs Amid Price Squeeze, Nestle Says",
+      "desc": "The company is working to keep prices in check, as U.S. consumers fixate on affordability and buyers shift toward bulk or budget pack sizes, passing over middle formats.",
+      "link": "https://www.wsj.com/business/retail/consumers-shun-mid-sized-packs-amid-price-squeeze-nestle-says-38f2f37d?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 11:12:00 GMT",
+      "creator": "Aimee Look"
+    },
+    {
+      "title": "Chanel Snaps Up Storied French Shirtmaker Charvet",
+      "desc": "It is a rare acquisition for the fashion house as it looks to further widen its offer beyond its famed luxury handbags.",
+      "link": "https://www.wsj.com/business/retail/chanel-snaps-up-storied-french-shirtmaker-charvet-792ab11e?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 09:38:00 GMT",
+      "creator": "Joshua Kirby"
+    },
+    {
+      "title": "Auto & Transport Roundup: Market Talk",
+      "desc": "Find insight on Tesla, European natural-gas prices and more in the latest Market Talks covering the auto and transport sector.",
+      "link": "https://www.wsj.com/finance/stocks/auto-transport-roundup-market-talk-6073dcc9?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 21:13:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "Sodexo Shares Rise on Strong Revenue Growth, Raised Outlook",
+      "desc": "Shares rose 6.8% following a strong third-quarter and an upgraded organic revenue growth forecast for the fiscal year.",
+      "link": "https://www.wsj.com/business/retail/sodexo-shares-rise-on-strong-revenue-growth-raised-outlook-a3bd1c9e?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 07:56:00 GMT",
+      "creator": "Aimee Look"
+    },
+    {
+      "title": "Auto & Transport Roundup: Market Talk",
+      "desc": "Find insight on car purchases, auto loans, the USMCA and more in the latest Market Talks covering Auto and Transport.",
+      "link": "https://www.wsj.com/business/auto-transport-roundup-market-talk-7763a4e3?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 20:53:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "Nike Guides for Steeper Sales Decline as Consumers Come Under Pressure",
+      "desc": "The sneaker and apparel company reported a drop in revenue for the latest quarter amid weakness in China.",
+      "link": "https://www.wsj.com/business/retail/nikes-sales-continue-to-decline-as-china-weakness-persists-364626f0?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 15:55:00 GMT",
+      "creator": "Kelly Cloonan"
+    },
+    {
+      "title": "General Mills Aims to Win Back Thrifty Consumers With Protein and Pet Food",
+      "desc": "The maker of Cheerios and Annie’s Mac and Cheese plans to focus on introducing new products and marketing after taking on more costs to reduce prices for budget-conscious shoppers.",
+      "link": "https://www.wsj.com/business/earnings/general-mills-swings-to-loss-works-to-win-back-challenging-consumers-c5e24221?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 14:19:00 GMT",
+      "creator": "Katherine Hamilton"
+    },
+    {
+      "title": "Tesla Driver Charged With Manslaughter After Crashing Into Texas Home, Killing Woman",
+      "desc": "Investigators say the driver acted to override the car’s automated driving assistance system.",
+      "link": "https://www.wsj.com/business/autos/driver-charged-with-manslaughter-after-tesla-crashed-into-texas-home-killing-woman-inside-65e17279?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 18:21:00 GMT",
+      "creator": "Patrick George"
+    },
+    {
+      "title": "Tesla Sales Jumped in Second Quarter",
+      "desc": "The electric automaker sells just three new-car models now, with CEO Elon Musk putting the focus on autonomous vehicles and robotics.",
+      "link": "https://www.wsj.com/business/autos/tesla-sales-jumped-in-second-quarter-c9e2f067?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 14:14:00 GMT",
+      "creator": "Becky Peterson"
+    },
+    {
+      "title": "Safety Regulator Closes Tesla Phantom Braking Probe After Complaints Drop Sharply",
+      "desc": "The National Highway Traffic Safety Administration found no crashes tied to the issues and that they posed only a low safety risk and were addressed in software updates.",
+      "link": "https://www.wsj.com/business/autos/safety-regulator-closes-tesla-phantom-braking-probe-after-complaints-drop-sharply-9ffc4361?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 12:20:00 GMT",
+      "creator": "Adriano Marchese"
+    },
+    {
+      "title": "How Western Automakers Are Losing Their Grip on the Chinese Market",
+      "desc": "Local EV rivals have almost entirely elbowed out foreign brands with a faster, more tech-focused approach to building cars.",
+      "link": "https://www.wsj.com/business/autos/how-western-automakers-are-losing-their-grip-on-the-chinese-market-bd3ac6ce?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 03:00:00 GMT",
+      "creator": "Andrew Mollica"
+    },
+    {
+      "title": "Ford Recalls More Than 740,000 Vehicles Over Transmission Issue",
+      "desc": "The recall covers certain Navigators, Expeditions, Explorers, Lincoln Aviators and F-150 trucks.",
+      "link": "https://www.wsj.com/business/autos/ford-recalls-more-than-740-000-vehicles-over-transmission-issue-179134fc?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 16:25:00 GMT",
+      "creator": "Joseph De Avila"
+    },
+    {
+      "title": "Opinion | 250 Years of American Enterprise",
+      "desc": "A nation with a government, not the other way around.",
+      "link": "https://www.wsj.com/opinion/250-years-of-american-enterprise-954c07ad?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 21:19:00 GMT",
+      "creator": "John Hillen"
+    },
+    {
+      "title": "Opinion | Big Labor, DEI and the GOP",
+      "desc": "The Faster Labor Contracts Act is a progressive trap for Republican supporters.",
+      "link": "https://www.wsj.com/opinion/faster-labor-contracts-act-unions-dei-republicans-a3b1296d?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 21:16:00 GMT",
+      "creator": "The Editorial Board"
+    },
+    {
+      "title": "Opinion | AI and the English Language",
+      "desc": "Like awful writers, large language models are programmed to reach for clichés.",
+      "link": "https://www.wsj.com/opinion/ai-and-the-english-language-274f9801?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 19:31:00 GMT",
+      "creator": "Richard Dooling"
+    },
+    {
+      "title": "Opinion | Me, Myself and AI",
+      "desc": "AI makes it easier for entrepreneurs to set up solo shops.",
+      "link": "https://www.wsj.com/opinion/me-myself-and-ai-d09b4220?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 21:19:00 GMT",
+      "creator": "Liya Palagashvili"
+    },
+    {
+      "title": "Opinion | Nuclear Generation and Capacity Is on the Rise",
+      "desc": "Our projections show small but meaningful increases.",
+      "link": "https://www.wsj.com/opinion/nuclear-generation-and-capacity-is-on-the-rise-7496a6e8?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 14:48:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "Opinion | Happy Days Again for TV News?",
+      "desc": "If streaming platforms give news a future, outlets will want to be trusted again.",
+      "link": "https://www.wsj.com/opinion/happy-days-again-for-tv-news-1c0a2f3a?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 21:29:00 GMT",
+      "creator": "Holman W. Jenkins, Jr."
+    },
+    {
+      "title": "What Happened in Fuel Markets When Trump Lifted the Century-Old Jones Act",
+      "desc": "California drivers, Gulf Coast refiners and Puerto Ricans have benefited from temporary suspension of the act.",
+      "link": "https://www.wsj.com/business/logistics/what-happened-in-fuel-markets-when-trump-lifted-the-century-old-jones-act-199da395?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 15:55:00 GMT",
+      "creator": "Alana Pipe"
+    },
+    {
+      "title": "AI Data Centers Use Far More Water Than Most Tech Giants Report",
+      "desc": "Water used at the power plants that supply electricity to data centers can be much greater than the water used in the data centers themselves.",
+      "link": "https://www.wsj.com/tech/ai/ai-data-centers-water-use-901e2902?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 09:30:00 GMT",
+      "creator": "Christopher Mims"
+    },
+    {
+      "title": "His $7 Billion Tanker Bet Raised Eyebrows. He Couldn’t Have Timed It Better.",
+      "desc": "The Korean tycoon spent the sum amassing the world’s largest fleet of oil tankers just before the Iran war sent the market haywire.",
+      "link": "https://www.wsj.com/business/the-korean-tanker-tycoon-winning-big-from-the-iran-war-ac9efe83?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 23:00:00 GMT",
+      "creator": "Costas Paris"
+    },
+    {
+      "title": "The ‘Five Alarm’ Risks Facing the Power Grid This Summer",
+      "desc": "High temperatures, new AI data centers and drought conditions pose challenges to the electricity system.",
+      "link": "https://www.wsj.com/business/energy-oil/the-five-alarm-risks-facing-the-power-grid-this-summer-3404b031?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 16:21:00 GMT",
+      "creator": "Jennifer Hiller"
+    },
+    {
+      "title": "Heat Waves Are Becoming a Chronic Drag on the Economy",
+      "desc": "",
+      "link": "https://www.wsj.com/business/energy-oil/heat-waves-are-becoming-a-chronic-drag-on-the-economy-f5000335?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 13:41:00 GMT",
+      "creator": "Ed Ballard"
+    },
+    {
+      "title": "U.K., Italian, Japanese Fighter Jet Venture Wins $6.14 Billion Contract",
+      "desc": "U.K.’s BAE Systems, Italy’s Leonardo and  Japan’s Mitsubishi Heavy Industries secured a contract funded by the three nations to develop a new stealth fighter jet.",
+      "link": "https://www.wsj.com/business/u-k-italian-japan-fighter-jet-venture-wins-6-14-billion-contract-e63655a3?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 16:13:00 GMT",
+      "creator": "Mauro Orru"
+    },
+    {
+      "title": "After Deadly D.C. Crash, FAA Moves Toward Sweeping Aircraft-Technology Mandate",
+      "desc": "Federal aviation regulators are preparing to mandate the use of technology that would help pilots see nearby aircraft.",
+      "link": "https://www.wsj.com/business/airlines/after-deadly-d-c-crash-faa-moves-toward-sweeping-aircraft-technology-mandate-81335b8a?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 14:50:00 GMT",
+      "creator": "Andrew Tangel"
+    },
+    {
+      "title": "JetBlue Pilot Reports Striking Drone at New York’s JFK Airport",
+      "desc": "The passenger aircraft landed safely and reported no damage, the FAA said.",
+      "link": "https://www.wsj.com/business/airlines/jetblue-pilot-reports-striking-drone-at-new-yorks-jfk-airport-cddab75d?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 29 Jun 2026 18:55:00 GMT",
+      "creator": "Alison Sider"
+    },
+    {
+      "title": "Airbus to Get $3.42 Billion Loan From European Investment Bank in Tech Sovereignty Push",
+      "desc": "The financing will support the company’s investments in commercial aviation, security and defense, with projects in France, Germany and Spain as the bloc seeks to build out its tech capabilities.",
+      "link": "https://www.wsj.com/world/europe/airbus-to-get-3-42-billion-loan-from-european-investment-bank-in-tech-sovereignty-push-a686b9ed?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 29 Jun 2026 12:19:00 GMT",
+      "creator": "Edith Hancock"
+    },
+    {
+      "title": "Airlines Are Installing New Luxury Seats, but No One Is Allowed to Sit in Them",
+      "desc": "Lie-flat seats in private pods face long waits for safety certifications, delaying debuts for carriers’ high-end offerings.",
+      "link": "https://www.wsj.com/business/airlines/airlines-are-installing-new-luxury-seats-but-no-one-is-allowed-to-sit-in-them-14e2878c?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sun, 28 Jun 2026 09:30:00 GMT",
+      "creator": "Alison Sider"
+    },
+    {
+      "title": "Pesticide Giant Syngenta Appoints New CEO",
+      "desc": "Syngenta Group chief executive and Illinois farmer Jeff Rowe plans to step down from the company’s top job, and he’ll be replaced by the operating chief and former head of its China business.",
+      "link": "https://www.wsj.com/business/pesticide-giant-syngenta-appoints-new-ceo-e8ae2e50?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 14:19:00 GMT",
+      "creator": "Patrick Thomas"
+    },
+    {
+      "title": "Microsoft’s Irish Hub Is Profit Powerhouse",
+      "desc": "A country-by-country EU reporting requirement forces companies to offer additional public tax details.",
+      "link": "https://www.wsj.com/business/microsofts-irish-hub-is-profit-powerhouse-19f86007?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 14:30:00 GMT",
+      "creator": "Richard Rubin"
+    },
+    {
+      "title": "How Companies Are Managing AI Token Spend",
+      "desc": "The growing use of AI agents is set to increase corporate AI token spend, and some companies are using techniques from the cloud era to control costs.",
+      "link": "https://www.wsj.com/cio-journal/how-companies-are-managing-ai-token-spend-833b6f7e?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 11:43:00 GMT",
+      "creator": "Belle Lin"
+    },
+    {
+      "title": "Honeywell Aerospace CEO Says AI Works for Blueprints but Isn’t Ready for the Cockpit",
+      "desc": "Now leading an independent company, Jim Currier is navigating the booming—and demanding—defense and aviation industries.",
+      "link": "https://www.wsj.com/business/honeywell-aerospace-ceo-says-ai-works-for-blueprints-but-isnt-ready-for-the-cockpit-bab9eb0e?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 29 Jun 2026 20:35:00 GMT",
+      "creator": "Drew FitzGerald"
+    },
+    {
+      "title": "Inside Consultants’ Messy Shift From Hourly Billing",
+      "desc": "As AI threatens to make the billable hour obsolete, professional-services firms wrestle with reinventing how they charge clients.",
+      "link": "https://www.wsj.com/cfo-journal/inside-consultants-messy-shift-from-hourly-billing-7bd9b802?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 26 Jun 2026 10:03:00 GMT",
+      "creator": "Mark Maurer"
+    },
+    {
+      "title": "Pizza Has Gone Cold. Domino’s Is Still Worth a Look.",
+      "desc": "The category’s sales are stagnant and its chains are faltering, but Domino’s can emerge as a winner",
+      "link": "https://www.wsj.com/business/hospitality/pizza-has-gone-cold-dominos-is-still-worth-a-look-38fab850?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 25 Jun 2026 09:30:00 GMT",
+      "creator": "David Wainer"
+    },
+    {
+      "title": "Things Are Getting Awkward in England as Roadside Diners Turn Into Sex Shops",
+      "desc": "Stiff upper lips are trembling as sexual wellness enters the national discourse.",
+      "link": "https://www.wsj.com/lifestyle/things-are-getting-awkward-in-england-as-roadside-diners-turn-into-sex-shops-6fd6355b?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 25 Jun 2026 01:48:00 GMT",
+      "creator": "James Hookway"
+    },
+    {
+      "title": "Domino’s Picks Veteran Executive to Steer It Through Tough Patch for Pizza",
+      "desc": "Joe Jordan, Domino’s operations chief, will succeed current CEO Russell Weiner.",
+      "link": "https://www.wsj.com/business/retail/dominos-picks-veteran-executive-to-steer-it-through-tough-patch-for-pizza-f14f8dae?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 22 Jun 2026 21:12:00 GMT",
+      "creator": "Heather Haddon"
+    },
+    {
+      "title": "Pizza Hut Lost in the U.S. Now It’s Selling for $2.7 Billion.",
+      "desc": "Watch how Pizza Hut lost its grasp on the U.S. pizza market to Domino’s, leading to its sale in two separate deals.",
+      "link": "https://www.wsj.com/business/hospitality/pizza-hut-lost-in-the-u-s-now-its-selling-for-2-7-billion-a09f37f7?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sat, 20 Jun 2026 16:00:00 GMT",
+      "creator": "Ava Anderson"
+    },
+    {
+      "title": "Local Burger Chains Are Winning the Fast-Food Wars",
+      "desc": "In-N-Out, Culver’s and Whataburger drive sales and location growth with fresh food and friendly service.",
+      "link": "https://www.wsj.com/business/hospitality/fast-food-regional-chains-ad7d97c3?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 19 Jun 2026 09:30:00 GMT",
+      "creator": "Heather Haddon"
+    },
+    {
+      "title": "A Cable Scion’s Hardest Deal Yet: Breaking Up His Family’s Company",
+      "desc": "Comcast co-CEO Brian Roberts spent his career building an integrated cable giant. To grow, he now plans to split it apart.",
+      "link": "https://www.wsj.com/business/media/a-cable-scions-hardest-deal-yet-breaking-up-his-familys-company-472b18ae?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 13:53:00 GMT",
+      "creator": "Jessica Toonkel"
+    },
+    {
+      "title": "Paramount Skydance Offers Concessions to Facilitate EU Approval of $81 Billion Warner Bros Deal",
+      "desc": "The companies offered concessions to the commission to ease competition concerns about the planned $81 billion deal.",
+      "link": "https://www.wsj.com/world/europe/paramount-skydance-offers-concessions-to-facilitate-eu-approval-of-81-billion-warner-bros-deal-ed4bc58c?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 10:13:00 GMT",
+      "creator": "Edith Hancock"
+    },
+    {
+      "title": "Vance Earned Up to $7.4 Million Last Year, Mostly From Book Royalties",
+      "desc": "Vice President JD Vance’s  assets include cryptocurrency and real estate, according to his latest financial disclosure report.",
+      "link": "https://www.wsj.com/politics/vance-earned-up-to-7-4-million-last-year-mostly-from-book-royalties-83e7415f?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 02:09:00 GMT",
+      "creator": "Alyssa Lukpat"
+    },
+    {
+      "title": "Trump’s Friends Gave Him Tickets to World Cup, Super Bowl and Ryder Cup",
+      "desc": "Federal disclosures show the president received dozens of tickets from team owners and allies to major sporting events.",
+      "link": "https://www.wsj.com/sports/trumps-friends-gave-him-tickets-to-world-cup-super-bowl-and-ryder-cup-9efb89b0?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 23:13:00 GMT",
+      "creator": "Celia Bernhardt"
+    },
+    {
+      "title": "Private-Equity Firms Sell Care Bears to Authentic Brands Group",
+      "desc": "IVEST Consumer Partners and Cloverlay leaned in to licensing and royalty agreements since buying the toy brand in 2023.",
+      "link": "https://www.wsj.com/pro/private-equity/private-equity-firms-sell-care-bears-to-authentic-brands-group-8ba42774?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 22:20:00 GMT",
+      "creator": "Isaac Taylor"
+    },
+    {
+      "title": "CMA CGM to Buy FedEx Supply Chain for $1.4 Billion",
+      "desc": "World’s No. 3 container line says the deal will expand its contract-logistics business in the U.S.",
+      "link": "https://www.wsj.com/business/logistics/french-shipping-company-cma-cgm-to-buy-fedex-supply-chain-for-1-4-billion-dc179ab9?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 21:06:00 GMT",
+      "creator": "Liz Young"
+    },
+    {
+      "title": "Maersk Lifts Guidance on Strong Demand, Higher Freight Rates",
+      "desc": "Continued strong demand in the container market, particularly in East Asia, and a recent sustained increase in spot market rates prompted the group to upgrade its outlook.",
+      "link": "https://www.wsj.com/business/retail/maersk-lifts-guidance-on-strong-demand-higher-freight-rates-fe667d53?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 06:37:00 GMT",
+      "creator": "Adrià Calatayud"
+    },
+    {
+      "title": "Adani Ports to Sell India Port Stake to Swiss Shipping Group MSC for $1.40B",
+      "desc": "Adani Ports said MSC’s 49% stake in Kerala-based transshipment hub is the single largest foreign private investment in Indian port infrastructure.",
+      "link": "https://www.wsj.com/business/logistics/adani-ports-to-sell-india-port-stake-to-swiss-shipping-group-msc-for-1-40b-39866d1b?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 05:41:00 GMT",
+      "creator": "Megan Cheah"
+    },
+    {
+      "title": "Auto & Transport Roundup: Market Talk",
+      "desc": "Find insight on rail freight traffic, Zeekr and more in the latest Market Talks covering the auto and transport sector.",
+      "link": "https://www.wsj.com/business/auto-transport-roundup-market-talk-55e86438?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 26 Jun 2026 21:45:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "Retailers Rush In Holiday Imports Early to Avoid Looming Costs",
+      "desc": "New tariffs and fuel surcharges are sparking competition for space on containerships.",
+      "link": "https://www.wsj.com/logistics-report/retailers-rush-in-holiday-imports-early-to-avoid-looming-costs-f318f61d?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 26 Jun 2026 20:54:00 GMT",
+      "creator": "Paul Berger"
+    },
+    {
+      "title": "Starlink Dominates Internet From Space. Can It Disrupt AT&T and Verizon on the Ground?",
+      "desc": "SpaceX wants its satellite network to eventually serve cellphones in dense urban areas, but capacity and infrastructure hurdles remain.",
+      "link": "https://www.wsj.com/business/telecom/starlink-internet-att-verizon-t-mobile-005cf4e3?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 12:00:00 GMT",
+      "creator": "Micah Maidenberg"
+    },
+    {
+      "title": "Satellite TV Provider Dish DBS Files for Bankruptcy Following AT&T Deal Snag",
+      "desc": "The EchoStar pay-TV subsidiary said it would repay debt once the $20 billion AT&T spectrum deal closes.",
+      "link": "https://www.wsj.com/pro/bankruptcy/satellite-tv-provider-dish-dbs-files-for-bankruptcy-following-at-t-deal-snag-c2b58620?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 21:56:00 GMT",
+      "creator": "Alexander Gladstone"
+    },
+    {
+      "title": "Satellite Pay-TV Provider Dish DBS Prepares for Bankruptcy Filing",
+      "desc": "The EchoStar unit is preparing for chapter 11 as soon as Tuesday, as it faces regulatory scrutiny over its network build-out.",
+      "link": "https://www.wsj.com/pro/bankruptcy/echostar-prepares-dish-dbs-bankruptcy-filing-as-soon-as-tuesday-b028dfe6?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 29 Jun 2026 20:38:00 GMT",
+      "creator": "Alexander Gladstone"
+    },
+    {
+      "title": "Rocket Lab Buys Satellite Operator Iridium in Bid to Challenge SpaceX",
+      "desc": "The $8 billion deal would give Rocket Lab control over a satellite fleet and access to wireless resources it could use to compete with SpaceX.",
+      "link": "https://www.wsj.com/business/telecom/rocket-lab-buys-satellite-operator-iridium-in-bid-to-challenge-spacex-d3a35be7?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 29 Jun 2026 14:37:00 GMT",
+      "creator": "Micah Maidenberg"
+    },
+    {
+      "title": "Digi to Launch IPO for Spanish Unit",
+      "desc": "The telecommunications operator plans to launch an initial public offering in Spain, with an investment pledge that could value the business at up to $1.94 billion.",
+      "link": "https://www.wsj.com/business/telecom/digi-to-launch-ipo-for-spanish-unit-486f60ec?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 29 Jun 2026 12:10:00 GMT",
+      "creator": "Adrià Calatayud"
+    },
+    {
+      "title": "German Drone Maker Quantum Systems Raises Funding at $8 Billion Valuation",
+      "desc": "Quantum Systems said it had raised $1.2 billion at a valuation of roughly $8 billion, bringing in fresh capital to expand drone production and invest in software for autonomous systems powered by artificial intelligence.",
+      "link": "https://www.wsj.com/finance/investing/german-drone-maker-quantum-systems-raises-funding-at-8-billion-valuation-cdd941c7?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 14:08:00 GMT",
+      "creator": "Mauro Orru"
+    },
+    {
+      "title": "The New ‘Bootstrap’ to the American Dream: Deep Cleaning Cars",
+      "desc": "Young entrepreneurs are capitalizing on demand for full-service car cleaning to keep vehicles looking spiffy.",
+      "link": "https://www.wsj.com/business/entrepreneurship/why-some-workers-are-trading-desks-for-car-detailing-fe4382d9?mod=pls_whats_news_us_business_f",
+      "pubDate": "Tue, 30 Jun 2026 12:59:00 GMT",
+      "creator": "Te-Ping Chen"
+    },
+    {
+      "title": "Silicon Valley Is Obsessed With ‘Trust Stacking,’ and the IRS Doesn’t Like It",
+      "desc": "A tax break for investing in small businesses is being multiplied by two, three, four or even more times through the use of trusts.",
+      "link": "https://www.wsj.com/personal-finance/taxes/silicon-valley-is-obsessed-with-trust-stacking-and-the-irs-doesnt-like-it-a542519b?mod=pls_whats_news_us_business_f",
+      "pubDate": "Mon, 29 Jun 2026 16:00:00 GMT",
+      "creator": "Ashlea Ebeling"
+    },
+    {
+      "title": "What Baiju Bhatt Learned From the 70 ‘Nos’ He Got While Building Robinhood",
+      "desc": "The billionaire co-founder of Robinhood shared his grueling journey to build the financial app with Gunjan Banerji in the latest episode of The WSJ Money Interview.",
+      "link": "https://www.wsj.com/business/how-baiju-bhatt-started-robinhood-79537954?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 24 Jun 2026 16:23:00 GMT",
+      "creator": "Gunjan Banerji"
+    },
+    {
+      "title": "Agility, Maker of Humanlike Robots, to Go Public in $2.5 Billion SPAC Deal",
+      "desc": "Agility’s humanoid robot, Digit, is used at manufacturing facilities and warehouses by companies such as Amazon.",
+      "link": "https://www.wsj.com/finance/agility-maker-of-humanlike-robots-to-go-public-in-2-5-billion-spac-deal-62c3cb32?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 24 Jun 2026 10:23:00 GMT",
+      "creator": "Lauren Thomas"
+    },
+    {
+      "title": "Energy & Utilities Roundup: Market Talk",
+      "desc": "Find insight on Sembcorp Industries and more in the latest Market Talks covering energy and utilities.",
+      "link": "https://www.wsj.com/business/energy-utilities-roundup-market-talk-dd5892d3?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 09:46:00 GMT",
+      "creator": ""
+    },
+    {
+      "title": "How Bezos Learned to Love Trump—and Win More Contracts for Blue Origin",
+      "desc": "The space company has booked rapid growth under this administration, after the founder spent president’s first term being ‘hated.’",
+      "link": "https://www.wsj.com/business/jeff-bezos-donald-trump-relationship-7e6a742e?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 01:00:00 GMT",
+      "creator": "Dana Mattioli"
+    },
+    {
+      "title": "Weak Jobs Report Prompts Wall Street to Change Strategy",
+      "desc": "Plus, an Olympian is charged with damaging the D.C. reflecting pool, and celebs use special-ops tactics to keep their weddings private.",
+      "link": "https://www.wsj.com/business/weak-jobs-report-prompts-wall-street-to-change-strategy-f7bd350a?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 21:44:00 GMT",
+      "creator": "Zlati Meyer"
+    },
+    {
+      "title": "Big Brewers Are Making an Outsize Bet on Tiny Cans of Beer",
+      "desc": "‘Pony’ beers are getting attention from brewers like Constellation Brands that want to appeal to moderation-minded drinkers and the GLP-1 crowd.",
+      "link": "https://www.wsj.com/business/big-brewers-are-making-an-outsize-bet-on-tiny-cans-of-beer-57766956?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 09:30:00 GMT",
+      "creator": "Laura Cooper"
+    },
+    {
+      "title": "The Middle East Has Been Good for Trump’s Bottom Line",
+      "desc": "Plus, SpaceX showed investors an AI device prototype, and Mars tries to make a naturally blue M&M.",
+      "link": "https://www.wsj.com/business/the-middle-east-has-been-good-for-trumps-bottom-line-c2434e69?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 21:07:00 GMT",
+      "creator": "Liz Webber"
+    },
+    {
+      "title": "This Simple White Line Is America’s Greatest Unsung Innovation",
+      "desc": "You know about the lightbulb and the iPhone. This is the unknown story of another ingenious creation that changed a nation.",
+      "link": "https://www.wsj.com/business/white-line-road-invention-america-250-8ce6bb89?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sat, 04 Jul 2026 01:00:00 GMT",
+      "creator": "Ben Cohen"
+    },
+    {
+      "title": "The Company Founder Who Got Fired for Ignoring His Own Return-to-Office Rules",
+      "desc": "The former executive alleges his fellow co-owners used the policy as an excuse to push him out of the asset-management firm he helped run.",
+      "link": "https://www.wsj.com/business/the-founder-who-got-fired-for-ignoring-his-own-return-to-office-rules-6b194dd7?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sat, 04 Jul 2026 09:30:00 GMT",
+      "creator": "Lindsay Ellis"
+    },
+    {
+      "title": "U.K., Italian, Japanese Fighter Jet Venture Wins $6.14 Billion Contract",
+      "desc": "U.K.’s BAE Systems, Italy’s Leonardo and  Japan’s Mitsubishi Heavy Industries secured a contract funded by the three nations to develop a new stealth fighter jet.",
+      "link": "https://www.wsj.com/business/u-k-italian-japan-fighter-jet-venture-wins-6-14-billion-contract-e63655a3?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 16:13:00 GMT",
+      "creator": "Mauro Orru"
+    },
+    {
+      "title": "EV Batteries Are Defying Expectations After Hundreds of Thousands of Miles",
+      "desc": "Industry experts think newfound knowledge of battery durability is a game-changer for consumer confidence in EVs.",
+      "link": "https://www.wsj.com/business/autos/ev-batteries-are-defying-expectations-after-hundreds-of-thousands-of-miles-8579de13?mod=pls_whats_news_us_business_f",
+      "pubDate": "Sun, 05 Jul 2026 02:00:00 GMT",
+      "creator": "Ellie Davis"
+    },
+    {
+      "title": "How Bezos Learned to Love Trump—and Win More Contracts for Blue Origin",
+      "desc": "The space company has booked rapid growth under this administration, after the founder spent president’s first term being ‘hated.’",
+      "link": "https://www.wsj.com/business/jeff-bezos-donald-trump-relationship-7e6a742e?mod=pls_whats_news_us_business_f",
+      "pubDate": "Fri, 03 Jul 2026 01:00:00 GMT",
+      "creator": "Dana Mattioli"
+    },
+    {
+      "title": "Best Small-Business Loans in July 2026",
+      "desc": "The best small-business lenders have flexible business requirements, competitive rates and various loan options.",
+      "link": "https://www.wsj.com/buyside/personal-finance/business-loans/best-small-business-loans?mod=pls_whats_news_us_business_f",
+      "pubDate": "Wed, 01 Jul 2026 13:22:00 GMT",
+      "creator": "Miranda Marquit"
+    },
+    {
+      "title": "Best Business Debt Consolidation Loans in July 2026",
+      "desc": "Business debt consolidation can improve your cash flow and repackage your obligations to potentially save you money.",
+      "link": "https://www.wsj.com/buyside/personal-finance/business-loans/business-debt-consolidation-loans?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 02 Jul 2026 18:00:00 GMT",
+      "creator": "Miranda Marquit"
+    },
+    {
+      "title": "How to Choose a Financial Advisor",
+      "desc": "Navigate the process of selecting a financial advisor by exploring advisor types, fee structures, credentials and essential questions.",
+      "link": "https://www.wsj.com/buyside/personal-finance/financial-advisors/how-to-choose-a-financial-advisor?mod=pls_whats_news_us_business_f",
+      "pubDate": "Thu, 25 Jun 2026 16:05:00 GMT",
+      "creator": "Miranda Marquit"
+    }
+  ]
+}

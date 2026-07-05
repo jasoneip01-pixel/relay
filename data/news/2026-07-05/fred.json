@@ -1,0 +1,30 @@
+{
+  "source": "FRED",
+  "series": [
+    {
+      "id": "GDP",
+      "name": "GDP",
+      "error": "failed"
+    },
+    {
+      "id": "UNRATE",
+      "name": "Unemployment",
+      "error": "failed"
+    },
+    {
+      "id": "CPIAUCSL",
+      "name": "CPI",
+      "error": "failed"
+    },
+    {
+      "id": "FEDFUNDS",
+      "name": "Fed Funds Rate",
+      "error": "failed"
+    },
+    {
+      "id": "SP500",
+      "name": "S&P 500",
+      "error": "failed"
+    }
+  ]
+}
